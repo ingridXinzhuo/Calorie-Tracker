@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyDietFragment"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/foodCategorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        />
+
+    <Spinner
+        android:id="@+id/foodItemSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/addConsumptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a new Consumption"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextAddFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search a new food item"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/findFoodButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewForSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/findFoodButton"/>
+
+    <ImageView
+        android:id="@+id/imageViewForSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/addFoodButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a new food"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

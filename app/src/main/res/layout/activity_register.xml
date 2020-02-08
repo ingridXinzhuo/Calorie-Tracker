@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up" />
+
+        <TextView
+            android:id="@+id/textViewUsernameHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter username here" />
+
+        <EditText
+            android:id="@+id/registerUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+
+        <TextView
+            android:id="@+id/textViewPasswordHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter password here" />
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/textViewFirstNameHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter first name here" />
+
+        <EditText
+            android:id="@+id/registerFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+
+        <TextView
+            android:id="@+id/textViewSurNameHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter surname here" />
+
+        <EditText
+            android:id="@+id/registerSurName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+
+        <TextView
+            android:id="@+id/textViewDOBHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter Date of birth" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Select Date"
+            android:id="@+id/registerDOB"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Email" />
+
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:id="@+id/textViewHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Height" />
+
+        <EditText
+            android:id="@+id/registerHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+
+        <TextView
+            android:id="@+id/textViewWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Weight"/>
+
+        <EditText
+            android:id="@+id/registerWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+
+        <TextView
+            android:id="@+id/textViewGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Please select gender here" />
+
+        <RadioGroup
+            android:id="@+id/registerGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioBtnMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/radio_male" />
+
+            <RadioButton
+                android:id="@+id/radioBtnFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_female" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewAddressHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Please enter address here" />
+
+        <EditText
+            android:id="@+id/registerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+
+        <TextView
+            android:id="@+id/textViewPostcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="postcode" />
+
+        <EditText
+            android:id="@+id/registerPostcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+
+        <TextView
+            android:id="@+id/registerSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose you level of activity" />
+
+        <Spinner
+            android:id="@+id/registerLevelOfActivity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"/>
+
+        <TextView
+            android:id="@+id/textViewStepPerMile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step per mile" />
+
+        <EditText
+            android:id="@+id/registerStepPerMile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"/>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

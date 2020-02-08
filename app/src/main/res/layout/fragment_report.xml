@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportFragment">
+
+    <EditText
+        android:id="@+id/datePicker"
+        android:clickable="true"
+        android:hint="@string/SelectADate"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/displayPieButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="display"
+        android:layout_below="@+id/datePicker"
+        />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:id="@+id/pieChart"
+        android:layout_below="@+id/datePicker"
+        >
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <EditText
+        android:id="@+id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:hint="Start date"
+        android:textSize="15dp"
+        android:layout_below="@+id/pieChart"
+        />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/startDate"
+        android:minWidth="100dp"
+        android:hint="end Date"
+        android:textSize="15dp"
+        android:layout_below="@+id/pieChart"/>
+
+    <Button
+        android:id="@+id/displayBarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/endDate"
+        android:text="Show bar chart"
+        android:textSize="15dp"
+        android:layout_below="@+id/pieChart"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/displayBarButton"/>
+
+</RelativeLayout>

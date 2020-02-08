@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepsFragment">
+
+    <TextView
+        android:id="@+id/textViewSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Please enter steps for today below:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSteps"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/addToDBButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSteps"
+        android:text="Submit"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/textViewAddToDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addToDBButton"/>
+
+    <Button
+        android:id="@+id/readFromDBButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAddToDB"
+        android:text="READ DATABASE" />
+    <TextView
+        android:id="@+id/textViewReadFromDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/readFromDBButton"/>
+
+    <Button
+        android:id="@+id/deleteFromDBButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewReadFromDB"
+        android:text="Delete from DB" />
+    <TextView
+        android:id="@+id/textViewDeleteFromDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteFromDBButton"/>
+
+    <Button
+        android:id="@+id/upDateDBButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDeleteFromDB"
+        android:text="Update" />
+    <TextView
+        android:id="@+id/textViewUpdateDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upDateDBButton"/>
+
+    <Button
+        android:id="@+id/addNetbeanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUpdateDB"
+        android:text="Write to netbean" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calorie Tracker"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="65px"
+        android:lineSpacingExtra="9dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="393dp"
+        android:layout_height="321dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/fitness1" />
+
+
+    <TextClock
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:format12Hour="MM/dd/yy h:mmaa"
+        />
+
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="Welcome to Calorie Tracker!"/>
+
+    <TextView
+        android:id="@+id/textViewGoalHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter calorie goal for today:"
+        android:textSize="55px"
+        android:lineSpacingExtra="5dp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextSetGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="eg.1234"/>
+
+    <Button
+        android:id="@+id/setGoalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set a Goal now"/>
+
+</LinearLayout>
